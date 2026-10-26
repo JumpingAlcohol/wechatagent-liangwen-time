@@ -2,6 +2,8 @@
 
 作者：**JumpingAlcohol**（B站同名）。Windows，WeChatAgent **0.4.1配套版**，不是官方插件。峰时在模型调用之前限流微信消息、暂停指定工具，谷时恢复；固定提醒不调用模型。
 
+**基础项目：[sourcepro5/WeChatAgent](https://github.com/sourcepro5/WeChatAgent)。** 本项目基于其插件接口与微信聊天桥接开发，微信后台收发、会话管理和聊天授权由WeChatAgent提供；JumpingAlcohol负责峰谷省钱策略、提醒及配套部署。感谢上游项目，本项目是第三方扩展。
+
 ## 安装
 
 请分享 **bundle.zip**，只导入 `plugin.zip` 不能提供宿主控制能力。
