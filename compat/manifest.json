@@ -1,0 +1,87 @@
+{
+  "id": "liangwen-time",
+  "hostVersion": "0.4.1",
+  "files": [
+    {
+      "path": "components/qq-bridge/src/core/social-engine.js",
+      "payload": "components/qq-bridge/src/core/social-engine.js",
+      "sha256": "f70adb0d03e625adf28ef0304c9d6b36ed68117ce8edf66a05c2157eabbcecae",
+      "acceptedBefore": [
+        "ec10ab9517e60316c1efa1f3d8044b3f98cfb5e49b0f0fbc632f204df1bd36fa",
+        "a02786f617e4b199d22181c5ddab8db0765efde4589c65483ea4ca952ef05349"
+      ]
+    },
+    {
+      "path": "components/qq-bridge/src/core/proactive-engine.js",
+      "payload": "components/qq-bridge/src/core/proactive-engine.js",
+      "sha256": "d9bc9b01a6d051cfad9eb7c9c5559e6695240a5761962e4908bc1b86d2c4dd58",
+      "acceptedBefore": [
+        "169f98cb8f2e4440bfb35218d7f480c9bdc450b43e094cb66b6a0b4b39d8d567",
+        "3170ea7d0529f3076c1dcd0b6a75f18874ef6e413ee2ac0d2d1d2522e3837916"
+      ]
+    },
+    {
+      "path": "components/qq-bridge/src/core/peak-economy-controller.js",
+      "payload": "components/qq-bridge/src/core/peak-economy-controller.js",
+      "sha256": "e66d80c239884491a529656f58f86133517a7f7bffbc2a8b61d00b7116e9bfc7",
+      "acceptedBefore": []
+    },
+    {
+      "path": "components/qq-bridge/src/social-bridge.js",
+      "payload": "components/qq-bridge/src/social-bridge.js",
+      "sha256": "e109a3037ca315b8194549ce3aa9125d8ca67b63937cef4451af725e0f26c96f",
+      "acceptedBefore": [
+        "f67633020814d129eb2c4239984efb833b81616059949c4fbdeb75cc966f5887",
+        "d389bc0d0efbecf6a57eb31cbb6bdbf0042d814f7bf6a11548954b5322663dcb",
+        "1ca9faa204cc834f74054e5b48ac9a23e644735388c1e41faf134b4d2592f14c",
+        "9c6da06d1bcefe5da05e1fbf871528b69538085fcca2e89c8a5d09240b2cfc82"
+      ]
+    },
+    {
+      "path": "packages/dsh-social-bridge-plugin/billing-time.mjs",
+      "payload": "packages/dsh-social-bridge-plugin/billing-time.mjs",
+      "sha256": "fab83235a57f5d05f9755992cf8de52feaa87ece9e34df15e656cd244814415b",
+      "acceptedBefore": []
+    },
+    {
+      "path": "packages/dsh-social-bridge-plugin/peak-economy.mjs",
+      "payload": "packages/dsh-social-bridge-plugin/peak-economy.mjs",
+      "sha256": "71924695e22f005e8795b9ad933ca725aef2d8c5abfc85bee43de9579a18ed12",
+      "acceptedBefore": []
+    },
+    {
+      "path": "packages/dsh-social-bridge-plugin/social-tool-restrict.mjs",
+      "payload": "packages/dsh-social-bridge-plugin/social-tool-restrict.mjs",
+      "sha256": "58a51290636eb74253d59b8fa7d87f7af839794454c2ee423f279ee91a5acb9d",
+      "acceptedBefore": [
+        "1566d85d7f6cbbd48025a47874e988db917a6eec3dc9362ce473beaa0b5cd1d2"
+      ]
+    },
+    {
+      "path": "packages/dsh-social-bridge-plugin/native-context.mjs",
+      "payload": "packages/dsh-social-bridge-plugin/native-context.mjs",
+      "sha256": "acfadb4d9c171391151dc36358af74932b6e466e0ef614cb42b839fb433de29d",
+      "acceptedBefore": [
+        "7adf694018176772fcb6e0e3ab93658e4ad687a7495c0b168a93647c91433c7e",
+        "4275c6d074c54364c5536352d538dc8d5ec6a49b28939d9243f95078d5b898ab"
+      ]
+    },
+    {
+      "path": "packages/plugin-api/catalog.mjs",
+      "payload": "packages/plugin-api/catalog.mjs",
+      "sha256": "de510585a393834c7b8d11418fe8fb72cf66378498e0c0e5119201acb0565f54",
+      "acceptedBefore": [
+        "6d32cc841a5d8fb365d1e0eab2052afd985a0b4f462a0be3e94da09b004f31cb",
+        "01e2abb2f7d54de06f44ca5a59449f0412f4c66cd8b1bea934c67a6bd3242382"
+      ]
+    },
+    {
+      "path": "scripts/project-config.mjs",
+      "payload": "scripts/project-config.mjs",
+      "sha256": "2d2456ffcc7af401b39cf34e2602505e108ca04e5fef01095846b75b2552c42b",
+      "acceptedBefore": [
+        "000359181ff02e718570d33e8301e86821d3046c2a3dee3dbf3ed03cf9b7bf26"
+      ]
+    }
+  ]
+}

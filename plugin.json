@@ -1,0 +1,129 @@
+{
+  "id": "liangwen-time",
+  "name": "梁文峰／梁文谷 · 峰谷省钱",
+  "version": "1.0.0",
+  "apiVersion": 2,
+  "host": "wechatagent",
+  "author": "bb王zyx",
+  "description": "按 DeepSeek 北京时间峰谷计费，峰时在模型调用之前限流并暂停选定搜索工具，谷时恢复。固定提醒不调用模型。选项在本插件设置中调整；需先安装配套的 peak-economy-v1 宿主接口。",
+  "permissions": [
+    "storage",
+    "reply"
+  ],
+  "requiresHostFeatures": [
+    "actions-v1",
+    "peak-economy-v1"
+  ],
+  "requiresAccount": true,
+  "settings": {
+    "timeZone": "America/Toronto",
+    "groupMode": "mention",
+    "privateMode": "throttle",
+    "intervalMinutes": 5,
+    "pauseProactive": true,
+    "blockBilibili": true,
+    "blockWeb": true,
+    "peakNotice": true,
+    "valleyNotice": true,
+    "quietStart": "02:00",
+    "quietEnd": "09:00",
+    "allowOverride": true,
+    "shortReplies": true,
+    "holidayDates": ""
+  },
+  "configSchema": {
+    "timeZone": {
+      "type": "string",
+      "title": "提醒显示／免打扰时区",
+      "enum": [
+        "America/Toronto",
+        "Asia/Shanghai",
+        "UTC"
+      ],
+      "description": "计费始终按北京时间判断；本选项仅改变显示与免打扰，自动处理多伦多夏令时。"
+    },
+    "groupMode": {
+      "type": "string",
+      "title": "峰时群聊方式",
+      "enum": [
+        "mention",
+        "throttle",
+        "normal",
+        "paused"
+      ],
+      "description": "mention：只回应@／唤醒词并限流；throttle：允许自然接话但限流；normal：保持原频率；paused：不调用模型。"
+    },
+    "privateMode": {
+      "type": "string",
+      "title": "峰时私聊方式",
+      "enum": [
+        "throttle",
+        "normal",
+        "paused"
+      ],
+      "description": "throttle：合并消息、按间隔回复；normal：保持原频率；paused：不调用模型。"
+    },
+    "intervalMinutes": {
+      "type": "integer",
+      "title": "峰时每个聊天的回复间隔（分钟）",
+      "minimum": 1,
+      "maximum": 60,
+      "description": "只影响 mention／throttle 模式；含模型选择沉默的一轮，重启不重置。"
+    },
+    "pauseProactive": {
+      "type": "boolean",
+      "title": "峰时暂停主动聊天",
+      "description": "只暂停微信主动发言，不修改独立的刷B站计划。"
+    },
+    "blockBilibili": {
+      "type": "boolean",
+      "title": "峰时暂停B站工具",
+      "description": "暂停微信端B站搜索、字幕／画面读取等 bili 工具；谷时自动恢复原授权。"
+    },
+    "blockWeb": {
+      "type": "boolean",
+      "title": "峰时暂停网页搜索／读取",
+      "description": "从本轮可用工具中移除并在执行时校验，不只依赖提示词。"
+    },
+    "peakNotice": {
+      "type": "boolean",
+      "title": "峰时收到聊天时提醒一次",
+      "description": "每个聊天每段峰时只提醒一次，不逐条刷屏，不调用模型。"
+    },
+    "valleyNotice": {
+      "type": "boolean",
+      "title": "进入谷时提醒恢复",
+      "description": "仅提醒上一段峰时有互动的已授权聊天；免打扰时段过后补发一次。"
+    },
+    "quietStart": {
+      "type": "string",
+      "title": "谷时主动提醒免打扰开始",
+      "minLength": 5,
+      "maxLength": 5,
+      "description": "HH:MM；开始与结束相同表示不启用免打扰。用户主动发消息时仍可提示当前时段。"
+    },
+    "quietEnd": {
+      "type": "string",
+      "title": "谷时主动提醒免打扰结束",
+      "minLength": 5,
+      "maxLength": 5,
+      "description": "HH:MM，默认09:00。"
+    },
+    "allowOverride": {
+      "type": "boolean",
+      "title": "允许单轮“峰时照常执行”",
+      "description": "当前聊天明确以“峰时照常执行：任务”开头才放行该轮频率与工具限制；不改变原账号权限。"
+    },
+    "shortReplies": {
+      "type": "boolean",
+      "title": "峰时偏向简短回复",
+      "description": "保持人格；普通闲聊尽量一两句。属于模型指令，不是硬性输出token上限。"
+    },
+    "holidayDates": {
+      "type": "string",
+      "title": "补充中国节假日（北京时间日期）",
+      "maxLength": 3000,
+      "description": "用逗号分隔 YYYY-MM-DD。本机内置2026年国务院公布休假日期；后续年份需维护。定价规则来源与核对日期见README。"
+    }
+  }
+}

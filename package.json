@@ -1,0 +1,14 @@
+{
+  "name": "wechatagent-liangwen-time",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "bb王zyx",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}
