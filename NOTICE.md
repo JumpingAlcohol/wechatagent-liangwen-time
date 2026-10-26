@@ -1,6 +1,6 @@
 # 来源与改动
 
-bb王zyx提供峰谷策略、提醒、安装器、设置、测试和文档。
+JumpingAlcohol提供峰谷策略、提醒、安装器、设置、测试和文档。
 
 `compat/payload`基于[sourcepro5/WeChatAgent](https://github.com/sourcepro5/WeChatAgent)0.4.1，改动包括模型前准入、工具过滤、主动聊天开关、部署指纹及本地图库优先规则。Bridge子集源自[Derpyu520/qq-bridge](https://github.com/Derpyu520/qq-bridge)。保留MIT通知于`licenses/`。根LICENSE不重新授权独立第三方内容。
 

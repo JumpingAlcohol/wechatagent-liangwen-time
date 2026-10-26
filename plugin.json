@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "apiVersion": 2,
   "host": "wechatagent",
-  "author": "bb王zyx",
+  "author": "JumpingAlcohol",
   "description": "按 DeepSeek 北京时间峰谷计费，峰时在模型调用之前限流并暂停选定搜索工具，谷时恢复。固定提醒不调用模型。选项在本插件设置中调整；需先安装配套的 peak-economy-v1 宿主接口。",
   "permissions": [
     "storage",
